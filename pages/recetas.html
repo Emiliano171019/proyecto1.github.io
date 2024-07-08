@@ -6,6 +6,7 @@
     <title>Recetas</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <nav>
@@ -17,7 +18,6 @@
             <li><a href="cursos.html">Cursos</a></li>
             <li><a href="recetas.html">Recetas</a></li>
             <li><a href="restaurantes.html">Restaurantes</a></li>
-            <li><a href="sobre-mi.html">Sobre Mi</a></li>
         </ul>
     </nav>
     <header>
@@ -33,7 +33,7 @@
                 </div>
                 <div class="recetas-item">
                     <img alt="Imagen 3" src="../assets/assets/img/milhojas de patata y boñato con ensalada de cherrys.jpg" class="recetas-img">
-                    <p>milhojas de patata y boñato con ensalada de cherrys </p>
+                    <p>milhojas de patata y boñato con ensalada de cherrys</p>
                 </div>
                 <div class="recetas-item">
                     <img alt="Imagen 4" src="../assets/assets/img/sopa de patata y puerro .jpg" class="recetas-img">
@@ -103,7 +103,7 @@
         </section>
     </main>
     <footer class="footer bg-dark text-white mt-5 w-100">
-        <div class="container py-2" ,>
+        <div class="container py-2">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <a href="#" class="text-white">Home</a>
@@ -131,5 +131,18 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</html>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var toggle = document.querySelector('.navbar-toggle');
+        var menu = document.querySelector('nav ul');
 
+        toggle.addEventListener('change', function() {
+            if (toggle.checked) {
+                menu.style.display = 'flex';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+    });
+</script>
+</html>

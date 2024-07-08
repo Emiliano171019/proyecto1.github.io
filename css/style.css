@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 body {
     background-image: url('../assets/assets/img/1704352747174.jpeg');
     background-size: cover;
@@ -9,11 +11,7 @@ body {
     padding: 0;
 }
 
-body.sobre-mi {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
+
 
 .full-page-image {
     background-image: url('../assets/assets/img/1704352747174.jpeg'); /* Update the path to your image */
@@ -94,12 +92,15 @@ nav ul li a:hover {
         position: absolute;
         left: 10px; /* Posicionar el icono de menú hamburguesa a la izquierda */
         top: -2px; /* Mover el icono un poco más arriba */
+        z-index: 999;
+        
+    
     }
     nav ul {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #436281;
+        background-color: #007bff;
         position: absolute;
         top: 40px; /* Reducir la altura del desplegable */
         left: 0;
@@ -113,8 +114,8 @@ nav ul li a:hover {
     .navbar-toggle:checked + .navbar-icon + ul {
         display: flex;
     }
+    
 }
-
 
 .gallery-img {
     width: 100%;
@@ -251,6 +252,13 @@ img {
 
 .recetas-item {
     text-align: center;
+}
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .recetas-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
 }
 
 .restaurante-item {
