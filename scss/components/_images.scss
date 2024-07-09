@@ -1,0 +1,32 @@
+img, .gallery-img, .recetas-img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.full-page-image {
+    background-image: url('../assets/assets/img/1704352747174.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo-img {
+    width: 10%;
+    height: auto;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: inline;
+    box-sizing: border-box;
+    position: relative;
+    right: 680px;
+    bottom: 148px;
+    z-index: 100;
+}
+
+.position-relative {
+    position: relative;
+    left: 25px;
+}
