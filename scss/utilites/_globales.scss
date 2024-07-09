@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 10px;
+    background-color: $background-color;
+    color: $text-color;
+    text-align: center;
+}
+
+h1 {
+    background-color: #040b11;
+    color: rgb(167, 6, 6);
+    padding: 20px;
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+}
