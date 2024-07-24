@@ -1,45 +1,45 @@
 nav {
-    background-color: $primary-color;
+    background-color: #436281;
     position: sticky;
     top: 0;
     z-index: 100;
+    text-align: center; /* Centrar el menú en pantallas grandes */
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+.navbar-icon {
+    display: none;
+    background-color: #436281;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
     text-align: center;
+}
 
-    ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centrar el menú en pantallas grandes */
+}
 
-        li {
-            display: inline;
-            margin-right: 20px;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
 
-            a {
-                color: #ffffff;
-                text-decoration: none;
-                font-weight: bold;
-                
-                &:hover {
-                    color: $secondary-color;
-                }
-            }
-        }
-    }
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-    .navbar-toggle {
-        display: none;
-    }
-
-    .navbar-icon {
-        display: none;
-        background-color: $primary-color;
-        color: white;
-        padding: 10px;
-        cursor: pointer;
-        text-align: center;
-    }
+nav ul li a:hover {
+    color: #007bff;
 }
 
 /* Estilos para dispositivos móviles */
@@ -47,29 +47,29 @@ nav {
     .navbar-icon {
         display: block;
         position: absolute;
-        left: 10px;
-        top: -2px;
+        left: 10px; /* Posicionar el icono de menú hamburguesa a la izquierda */
+        top: -2px; /* Mover el icono un poco más arriba */
         z-index: 999;
+        
+    
     }
-
-    ul {
+    nav ul {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: $secondary-color;
+        background-color: #007bff;
         position: absolute;
-        top: 40px;
+        top: 40px; /* Reducir la altura del desplegable */
         left: 0;
-        
-        li {
-            display: block;
-            margin: 0;
-            text-align: center;
-            padding: 0;
-        }
     }
-
+    nav ul li {
+        display: block;
+        margin: 0;
+        text-align: center;
+        padding: 0px 0; /* Reducir el espacio entre los elementos del menú */
+    }
     .navbar-toggle:checked + .navbar-icon + ul {
         display: flex;
     }
+    
 }

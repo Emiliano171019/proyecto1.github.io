@@ -1,3 +1,4 @@
+
 footer {
     background-color: rgb(255, 252, 252);
     color: rgb(16, 9, 9);
@@ -8,13 +9,16 @@ footer {
     left: 0px;
     flex-shrink: 0;
 
-    .social-icons a {
-        margin: 0 10px;
-        color: rgb(16, 9, 9);
+    .social-icons {
+        @include flex-center;
 
-        &:hover {
-            color: $secondary-color;
+        a {
+            margin: 0 10px;
+            color: rgb(16, 9, 9);
+
+            &:hover {
+                color: $secondary-color;
+            }
         }
     }
 }
- /* prueba 1000 */

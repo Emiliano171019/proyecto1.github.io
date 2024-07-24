@@ -1,12 +1,12 @@
+
 header {
     background-color: #f6fafb;
     text-align: center;
     padding: 20px;
     margin: 5px;
-    
+
     img {
-        width: 100px;
-        display: block;
+        @include responsive-img;
         margin: 0 auto;
     }
 

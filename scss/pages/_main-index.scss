@@ -1,0 +1,17 @@
+body {
+    background-image: url('../assets/assets/img/1704352747174.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: $font-family;
+    color: $secondary-color;
+    margin: 0;
+    padding: 0;
+}
+
+.full-page-image {
+    background-image: url('../assets/assets/img/1704352747174.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
