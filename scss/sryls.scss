@@ -8,3 +8,10 @@
 @import 'components/footer';
 @import 'components/images';
 
+.pages-contacto, .pages-restaurantes, .pages-recetas, .pages-cursos {
+    background-image: url('../assets/assets/img/receta-1-pagina.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
