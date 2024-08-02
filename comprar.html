@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra - Agregar Tarjeta</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+        .card-form {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .btn-purchase {
+            background-color: #ff9900;
+            border-color: #ff9900;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card-form">
+            <h2 class="mb-4">Agregar Tarjeta</h2>
+            <form>
+                <div class="form-group">
+                    <label for="cardName">Nombre en la tarjeta</label>
+                    <input type="text" class="form-control" id="cardName" placeholder="Nombre completo">
+                </div>
+                <div class="form-group">
+                    <label for="cardNumber">Número de la tarjeta</label>
+                    <input type="text" class="form-control" id="cardNumber" placeholder="Número de la tarjeta">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="cardExpiry">Fecha de expiración</label>
+                        <input type="text" class="form-control" id="cardExpiry" placeholder="MM/AA">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="cardCVC">CVC</label>
+                        <input type="text" class="form-control" id="cardCVC" placeholder="CVC">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="billingAddress">Dirección de facturación</label>
+                    <input type="text" class="form-control" id="billingAddress" placeholder="Dirección">
+                </div>
+                <button type="submit" class="btn btn-primary btn-purchase btn-block"><i class="fas fa-shopping-cart"></i> Realizar Compra</button>
+                <a href="recetas.html" class="btn btn-secondary btn-block mt-3"><i class="fas fa-arrow-left"></i> Volver</a>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
